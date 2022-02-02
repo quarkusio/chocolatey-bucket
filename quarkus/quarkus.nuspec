@@ -14,7 +14,7 @@ the Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM.
     <title>quarkus</title>
     <projectUrl>https://quarkus.io</projectUrl>
     <copyright>Quarkus contributors</copyright>
-    <licenseUrl></licenseUrl>
+    <licenseUrl>https://github.com/quarkusio/quarkus/blob/main/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>cli quarkus java quarkus cli</tags>
     <summary>CLI for Quarkus</summary>
@@ -23,7 +23,7 @@ the Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM.
     <docsUrl>https://quarkus.io</docsUrl>
     <bugTrackerUrl>https://github.com/quarkusio/quarkus/issues</bugTrackerUrl>
     <releaseNotes>https://github.com/quarkusio/quarkus/releases/tag/2.7.0.Final</releaseNotes>
-    
+    <iconUrl>https://quarkus.io/assets/images/chocolatey-app-icon.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
