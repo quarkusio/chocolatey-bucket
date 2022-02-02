@@ -1,0 +1,22 @@
+name: Push Quarkus CLI to Chocolatey
+
+on:
+  workflow_dispatch:
+
+jobs:
+  chocolatey:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '2.2.204' # SDK Version to use.
+      - name: choco-build
+        run: |
+          powershell
+          choco pack quarkus/quarkus.nuspec
+      - name: choco-publish
+        run: |
+          powershell
+          choco apikey -k ${{ secrets.CHOCO_API_KEY }} -source https://push.chocolatey.org/
+          choco push $(ls *.nupkg | % {$_.FullName}) -s https://push.chocolatey.org/
