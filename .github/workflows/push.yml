@@ -11,7 +11,7 @@ jobs:
       - name: fix-version
         run: |
           powershell
-          (Get-Content -path quarkus/quarkus.nuspec -Raw) -replace '<version>(.*)\.Final</version>','<version>(.*)</version>' | Set-Content -Path quarkus/quarkus.nuspec
+          (Get-Content -path quarkus/quarkus.nuspec -Raw) -replace '<version>(.*)\.Final</version>','<version>$1</version>' | Set-Content -Path quarkus/quarkus.nuspec
           Get-Content -path quarkus/quarkus.nuspec
       - uses: actions/setup-dotnet@v1
         with:
