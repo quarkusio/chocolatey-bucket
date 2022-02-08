@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generated with JReleaser 0.10.0 at 2022-02-02T14:56:03.738695+01:00 -->
+<!-- Generated with JReleaser 1.0.0-M1 at 2022-02-08T17:06:54.373914+01:00 -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- required -->
     <id>quarkus</id>
-    <version>2.7.0.Final</version>
+    <version>2.7.1.Final</version>
     <authors>Quarkus Community</authors>
     <description>Create projects, manage extensions and perform build and development tasks for Quarkus,
 the Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM.
@@ -22,7 +22,7 @@ the Kubernetes Native Java stack tailored for OpenJDK HotSpot and GraalVM.
     <packageSourceUrl>https://github.com/quarkusio/chocolatey-bucket</packageSourceUrl>
     <docsUrl>https://quarkus.io</docsUrl>
     <bugTrackerUrl>https://github.com/quarkusio/quarkus/issues</bugTrackerUrl>
-    <releaseNotes>https://github.com/quarkusio/quarkus/releases/tag/2.7.0.Final</releaseNotes>
+    <releaseNotes>https://github.com/quarkusio/quarkus/releases/tag/2.7.1.Final</releaseNotes>
     <iconUrl>https://quarkus.io/assets/images/chocolatey-app-icon.png</iconUrl>
   </metadata>
   <files>
