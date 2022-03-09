@@ -1,11 +1,10 @@
-name: Push-quarkus
+name: Trigger-quarkus
 
 on:
-  push:
-    tags:
+  workflow_dispatch:
 
 jobs:
-  push:
+  trigger:
     runs-on: windows-latest
     
     steps:
