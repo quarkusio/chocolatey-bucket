@@ -3,6 +3,7 @@ name: Push-quarkus
 on:
   push:
     tags:
+      - '*'
     branches-ignore:
       - '**'
 
