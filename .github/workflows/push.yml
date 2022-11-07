@@ -3,6 +3,7 @@ name: Push-quarkus
 on:
   push:
     tags:
+      - '*'
     branches-ignore:
       - '**'
 
@@ -30,5 +31,5 @@ jobs:
       - name: Publish
         shell: powershell
         run: |
-          choco apikey -k ${{ secrets.CHOCOLATEY_API_KEY  }} -s https://push.chocolatey.org/
+          choco apikey -k ${{ secrets.CHOCOLATEY_API_KEY }} -s https://push.chocolatey.org/
           choco push $(ls *.nupkg | % {$_.FullName}) -s https://push.chocolatey.org/

@@ -1,13 +1,13 @@
-# Generated with JReleaser 1.1.0 at 2022-10-19T17:05:24.103415+02:00
+# Generated with JReleaser 1.3.0 at 2022-11-07T17:13:29.884085+01:00
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 $package = Split-Path $tools
-$app_home = Join-Path $package 'quarkus-cli-2.13.3.Final'
+$app_home = Join-Path $package 'quarkus-cli-2.13.4.Final'
 $app_exe = Join-Path $app_home 'bin/quarkus.bat'
 
 Install-ChocolateyZipPackage `
     -PackageName 'quarkus' `
-    -Url 'https://github.com/quarkusio/quarkus/releases/download/2.13.3.Final/quarkus-cli-2.13.3.Final.zip' `
-    -Checksum 'a5abac1f1d526222dc5ca46b22660bad8090c6b789719ad6b3f806b370e5bb4e' `
+    -Url 'https://github.com/quarkusio/quarkus/releases/download/2.13.4.Final/quarkus-cli-2.13.4.Final.zip' `
+    -Checksum '17a9c69a18e1b8821baad00988c836f282ab802e4d37d33be1eba69403463e24' `
     -ChecksumType 'sha256' `
     -UnzipLocation $package
 
