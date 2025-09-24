@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.3.0 at 2025-09-24T14:06:11.812240638Z
+# Generated with JReleaser 1.3.0 at 2025-09-24T19:31:18.737538417+02:00
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 $package = Split-Path $tools
 $app_home = Join-Path $package 'quarkus-cli-3.28.1'
