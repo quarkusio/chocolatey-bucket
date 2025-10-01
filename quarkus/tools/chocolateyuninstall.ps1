@@ -1,7 +1,7 @@
-# Generated with JReleaser 1.3.0 at 2025-09-24T19:31:18.737538417+02:00
+# Generated with JReleaser 1.3.0 at 2025-10-01T17:02:43.13644025Z
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 $package = Split-Path $tools
-$app_home = Join-Path $package 'quarkus-cli-3.28.1'
+$app_home = Join-Path $package 'quarkus-cli-3.28.2'
 $app_exe = Join-Path $app_home 'bin/quarkus.bat'
 
 Uninstall-BinFile -Name 'quarkus' -Path $app_exe
